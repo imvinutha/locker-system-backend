@@ -4,7 +4,7 @@ const router = express.Router();
 const { auth, isAdmin, isEmployeeOrAdmin } = require('../middleware/auth');
 
 // Get all users (admin only)
-router.get('/', auth, isAdmin, async (req, res) => {
+router.get('/', isAdmin, async (req, res) => {
   const db = req.db;
 
   try {

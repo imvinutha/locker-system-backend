@@ -263,3 +263,6 @@ function getLockerStatusRaw(ip, path) {
 }
 
 module.exports = { openLocker, getLockerStatus };
+
+
+// I need you to help me host a website, frontend react, backend express and node, db is in mysql and i want to host it all free without even providing my credit card details or anything and accessible anywhere

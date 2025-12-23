@@ -12,14 +12,14 @@ const paymentRoutes = require('./routes/payments');
 const app = express();
 
 // ====== CORS CONFIG ======
-const allowedOrigins = (process.env.CORS_ORIGINS || `
-  http://localhost:3000,
-  http://localhost:3001,
-  http://192.168.0.105:3000
-`)
-  .split(',')
-  .map(o => o.trim())
-  .filter(Boolean);
+const allowedOrigins = [
+  "http://localhost:3000",
+  "http://localhost:3001",
+  "http://192.168.0.105:3000",
+  "https://melodious-gnome-ea7f4b.netlify.app",
+  "https://locker-system-frontend-iq9h.onrender.com"
+];
+
 
 app.use(cors({
   origin: function (origin, callback) {
